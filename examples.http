@@ -1,0 +1,32 @@
+### Run home
+GET http://localhost:8080/
+
+### System Instructions (default)
+GET http://localhost:8080/system
+
+### System Instructions with a query
+GET http://localhost:8080/system?query="tell me a joke"
+
+### Prompt Stuffing
+GET http://localhost:8080/prompt-stuffing
+
+### Prompt Stuffing with a topic
+GET http://localhost:8080/prompt-stuffing?topic="Spring AI"
+
+### RAG - Load the vector store
+GET http://localhost:8080/load-pdf
+
+### RAG - Ask the question about the provided data
+GET http://localhost:8080/ask-about-pdf?topic="What is this article about?"
+
+### RAG - Ask the question about the provided data (newer RAG libraries)
+GET http://localhost:8080/rag
+
+### Chat Memory - Hello
+GET http://localhost:8080/memory?query="Hi, my name is Neven"
+
+### Chat Memory - Hello again
+GET http://localhost:8080/memory?query="What is my name again?"
+
+### Tool Calling
+GET http://localhost:8080/tool?query="I am traveling from Stockholm to Barcelona today. What kind of clothes should I pack?"
